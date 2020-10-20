@@ -21,7 +21,7 @@ library(Seurat)
 multiome.data = Read10X(data.dir = "filtered_feature_bc_matrix")
 multiome_RNA_Seurat = CreateSeuratObject(counts = multiome.data[['Gene Expression']], project = "MultiOmeRna", min.cells = 3, min.features = 200)
 
-#EDIT(!) after re-reading this script --> It might be better to not filter in this step (otherwise some cells wont have an annotation), so better set min.features at 0
+#EDIT(!) after re-reading this script --> It might be better to not filter cells in this step (otherwise some cells wont have an annotation), so better set min.features at 0
 
 annotated_Seurat = readRDS("pbmc_10k_v3.rds")
 
