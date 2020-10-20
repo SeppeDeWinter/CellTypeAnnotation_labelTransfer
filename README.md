@@ -1,5 +1,7 @@
 # Cell type annotation of pbmc_unsorted_3k_filtered
 
+## Download the data
+
 ```bash
 #Download 10x Multi-ome data
 wget https://cf.10xgenomics.com/samples/cell-arc/1.0.0/pbmc_unsorted_3k/pbmc_unsorted_3k_filtered_feature_bc_matrix.tar.gz
@@ -9,6 +11,8 @@ rm pbmc_unsorted_3k_filtered_feature_bc_matrix.tar.gz
 #Download annotated Seurat object (https://satijalab.org/seurat/vignettes.html)
 wget https://dl.dropbox.com/s/3f3p5nxrn5b3y4y/pbmc_10k_v3.rds
 ```
+
+## Predict cell types in R
 
 ```R
 library(Seurat)
